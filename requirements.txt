@@ -6,4 +6,4 @@ faiss-cpu
 PyPDF2
 sphinx
 sphinx-rtd-theme
-#myst-parser  # Only if you're using Markdown files in the docs
+myst-parser  # Only if you're using Markdown files in the docs
