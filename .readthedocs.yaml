@@ -1,0 +1,10 @@
+version: 2
+
+# Build settings
+sphinx:
+  configuration: docs/source/conf.py  # Path to your conf.py file
+
+# Python requirements
+python:
+  install:
+    - requirements: requirements.txt  # Use your existing requirements.txt file
