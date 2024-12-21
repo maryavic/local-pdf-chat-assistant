@@ -1,11 +1,11 @@
 version: 2
 
-# Build settings
+# Sphinx build configuration
 sphinx:
   configuration: docs/source/conf.py  # Path to your conf.py file
 
-# Python environment
+# Python environment configuration
 python:
   version: "3.8"  # Specify the Python version
   install:
-    - requirements: requirements.txt  # Install dependencies from requirements.txt
+    - requirements: requirements.txt  # Use your existing requirements file
