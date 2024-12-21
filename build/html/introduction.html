@@ -1,0 +1,173 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; Local PDF Chat Assistant  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9a2dae69"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="Welcome to Local PDF Chat Assistant’s Documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Local PDF Chat Assistant
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Local PDF Chat Assistant</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
+<p>Welcome to the <strong>Local PDF Chat Assistant</strong> documentation! This application is designed to revolutionize the way users interact with PDF documents by leveraging the power of natural language processing (NLP) and advanced AI models. It provides a seamless interface for querying and exploring PDF content efficiently and intuitively.</p>
+<p>### Overview</p>
+<p>The Local PDF Chat Assistant allows users to:
+- <strong>Upload PDF Files</strong>: Users can upload PDF documents to extract and process content.
+- <strong>Ask Contextual Questions</strong>: Through an interactive chat interface, users can pose questions related to the uploaded PDF, and the application provides accurate, context-aware responses.
+- <strong>View Sources</strong>: Responses generated from the PDF include source references, ensuring traceability and transparency.</p>
+<p>This application is built with a focus on user experience, enabling easy access to document information without manually searching through pages.</p>
+<p>—</p>
+<p>### Streamlit Interface</p>
+<p>The application provides an intuitive interface for uploading PDFs, selecting models, and querying documents. Below is an example of the interface:</p>
+<a class="reference internal image-reference" href="_images/streamlit_interface.png"><img alt="Streamlit Interface Screenshot" class="align-center" src="_images/streamlit_interface.png" style="width: 600px;" />
+</a>
+<p>### Key Features</p>
+<ol class="arabic simple">
+<li><p><strong>Interactive PDF Chat</strong>:
+- Upload a PDF and start asking questions in plain language.
+- The app understands the context and retrieves relevant answers from the document.</p></li>
+<li><p><strong>Model Selection</strong>:
+- Choose between different AI models (e.g., <cite>llama3</cite>, <cite>mistral</cite>, <cite>gemma</cite>) based on your preference or computational needs.</p></li>
+<li><p><strong>Source-Based Responses</strong>:
+- Get answers that are backed by the exact source from the document for credibility and validation.</p></li>
+<li><p><strong>Optimized PDF Processing</strong>:
+- Utilizes the LangChain library for text segmentation and FAISS for efficient vector storage and retrieval.</p></li>
+<li><p><strong>Streamlit User Interface</strong>:
+- A simple, intuitive interface for uploading PDFs, selecting models, and querying the document.</p></li>
+</ol>
+<p>—</p>
+<p>### How It Works</p>
+<ol class="arabic simple">
+<li><p><strong>PDF Upload and Processing</strong>:
+Users upload a PDF via the sidebar.
+The application processes the file using advanced text splitting techniques to extract and structure the content into manageable chunks.</p></li>
+<li><p><strong>Embedding and Vector Storage</strong>:
+The extracted chunks are embedded using a selected AI model, and a vector store (FAISS) is created for efficient document retrieval.</p></li>
+<li><p><strong>Interactive Chat</strong>:
+Users type questions in the chat interface.
+The app retrieves the most relevant chunks, generates a response, and displays it with the corresponding source references.</p></li>
+<li><p><strong>Model Flexibility</strong>:
+Switch between supported AI models to optimize for performance or specificity.</p></li>
+</ol>
+<p>—</p>
+<p>### Use Cases</p>
+<p>The Local PDF Chat Assistant is versatile and can be used in various scenarios:
+- <strong>Research and Study</strong>:</p>
+<blockquote>
+<div><p>Extract information from academic papers or books without manually skimming through pages.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>Business and Legal</strong>:
+Quickly find specific clauses or terms in lengthy contracts and agreements.</p></li>
+<li><p><strong>Data Analysis</strong>:
+Analyze reports or data-heavy documents by querying specific sections.</p></li>
+</ul>
+<p>—</p>
+<p>### Technology Stack</p>
+<p>The Local PDF Chat Assistant is powered by:
+- <strong>Streamlit</strong>: For the user interface and real-time interactivity.
+- <strong>LangChain</strong>: For text splitting, embeddings, and conversational AI chains.
+- <strong>FAISS</strong>: For efficient vector-based search and retrieval.
+- <strong>Ollama Models</strong>: State-of-the-art NLP models for embedding and querying.</p>
+<p>—</p>
+<p>This documentation will guide you through the installation, usage, and configuration of the Local PDF Chat Assistant. Dive into the sections below to learn how to get started!</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Local PDF Chat Assistant’s Documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Maryam Benaida.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
