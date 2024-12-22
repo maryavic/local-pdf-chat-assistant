@@ -10,4 +10,4 @@ sphinx:
 
 python:
   install:
-    - requirements: documentation/requirements.txt
+    - requirements: requirements-docs.txt
