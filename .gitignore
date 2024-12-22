@@ -4,6 +4,7 @@ __pycache__/
 *.so
 
 # Sphinx build artifacts
+docs/build/
 docs/_build/
 
 # Environment files
@@ -13,3 +14,19 @@ docs/_build/
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Python virtual environments
+venv/
+.env/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore Read the Docs build artifacts
+.rtd-environment.yml
