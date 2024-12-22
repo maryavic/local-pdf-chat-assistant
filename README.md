@@ -22,5 +22,5 @@ The **Local PDF Chat Assistant** is a Streamlit application that enables users t
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/local-pdf-chat-assistant.git
+   git clone https://github.com/maryavic/local-pdf-chat-assistant.git
    cd local-pdf-chat-assistant
